@@ -1,11 +1,13 @@
 package app.domain.model;
 
+import app.domain.model.emuns.Spices;
+
 public class Pet {
     private long  id;
     private String petName;
     private User owner;
     private int age;
-    private String species;
+    private Spices spices;
     private String race;
     private String description;
     private double weight;
@@ -33,11 +35,11 @@ public class Pet {
     public void setAge(int age) {
         this.age = age;
     }
-    public String getSpecies() {
-        return species;
+    public Spices getSpices() {
+        return spices;
     }
-    public void setSpecies(String species) {
-        this.species = species;
+    public void setSpices(Spices spices) {
+        this.spices = spices;
     }
     public String getRace() {
         return race;

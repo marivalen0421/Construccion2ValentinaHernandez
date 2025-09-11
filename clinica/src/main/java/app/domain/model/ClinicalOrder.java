@@ -9,6 +9,13 @@ public class ClinicalOrder {
     private User veterinarian;
     private String medicine;
     private Date date;
+    private String doce;
+    public String getDoce() {
+        return doce;
+    }
+    public void setDoce(String doce) {
+        this.doce = doce;
+    }
     public long getId() {
         return id;
     }
