@@ -2,7 +2,7 @@ package app.adapter.in.validators;
 
 import org.springframework.stereotype.Component;
 
-import app.domain.model.emuns.Spices;
+import app.domain.model.emuns.Species;
 
 @Component
 public class PetValidator extends SimpleValidator {
@@ -12,9 +12,9 @@ public class PetValidator extends SimpleValidator {
     public String descriptionValidator(String value) throws Exception{
         return stringValidator("Detalles de la mascota", value);
     }
-    public Spices spicesValidator(String value) throws Exception{
+    public Species spicesValidator(String value) throws Exception{
         stringValidator("Especie de la mascota", value);
-        return Spices.valueOf(value);
+        return Species.valueOf(value);
     }
 
     public String raceValidator(String value) throws Exception{

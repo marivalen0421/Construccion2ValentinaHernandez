@@ -5,6 +5,14 @@ import app.domain.model.emuns.Role;
 public class Person {
     private long id;
     private long document;
+    public long getDocument() {
+        return document;
+    }
+
+    public void setDocument(long document) {
+        this.document = document;
+    }
+
     private String name;
     private int age;
     private Role role;
@@ -15,14 +23,6 @@ public class Person {
 
     public void setId(long id){
         this.id = id;
-    }
-
-    public long document(){
-        return document;
-    }
-
-    public void setDocument(long document){
-        this.document = document;
     }
 
     public String getName(){

@@ -7,10 +7,11 @@ public class MedicalHistory {
     private Pet pet;
     private User veterinarian;
     private Date date;
-    private String reason;
+    private String motive;
     private String diagnosis;
     private String medicine;
     private String medicalProcedure;
+    private String dose;
     private ClinicalOrder clinicalOrder;
     private String vaccinationHistory;
     private String allergies;
@@ -24,6 +25,14 @@ public class MedicalHistory {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String getMotive() {
+        return motive;
+    }
+
+    public void setMotive(String motive) {
+        this.motive = motive;
     }
 
     public Pet getPet() {
@@ -40,22 +49,6 @@ public class MedicalHistory {
 
     public void setVeterinarian(User veterinarian) {
         this.veterinarian = veterinarian;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
-    public String getReason() {
-        return reason;
-    }
-
-    public void setReason(String reason) {
-        this.reason = reason;
     }
 
     public String getDiagnosis() {
@@ -130,7 +123,20 @@ public class MedicalHistory {
         this.status = status;
     }
 
-    
+    public Date getDate() {
+        return date;
+    }
 
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public String getDose() {
+        return dose;
+    }
+
+    public void setDose(String dose) {
+        this.dose = dose;
+    }
 
 }

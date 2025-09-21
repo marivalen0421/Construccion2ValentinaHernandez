@@ -1,6 +1,6 @@
 package app.domain.model.emuns;
 
-public enum  Spices {
+public enum  Species {
     DOG,
     CAT,
     BIRD,
