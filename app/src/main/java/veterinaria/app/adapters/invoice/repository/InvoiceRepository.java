@@ -1,0 +1,7 @@
+package veterinaria.app.adapters.invoice.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import veterinaria.app.adapters.invoice.entity.InvoiceEntity;
+public interface InvoiceRepository extends JpaRepository<InvoiceEntity,Long> {
+    public InvoiceEntity findInvoicedById(Long id);
+}
